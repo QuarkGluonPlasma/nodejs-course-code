@@ -10,9 +10,9 @@ export class ProgressBar {
 
     constructor() {}
 
-    start(total: number, initVlaue: number) {
+    start(total: number, initValue: number) {
         this.total = total;
-        this.value = initVlaue;
+        this.value = initValue;
 
         write(ansiEscapes.cursorHide)
         write(ansiEscapes.cursorSavePosition)
