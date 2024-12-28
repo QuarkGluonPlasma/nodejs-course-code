@@ -36,6 +36,12 @@
 
 [快速掌握 rollup](./rollup-test/)
 
+[rollup 打包 react 组件库（react 组件）](./react-comp/)
+
+[rollup 打包 react 组件库（组件库）](./react-comp-lib/)
+
+[rollup 打包 react 组件库（测试）](./my-comp-lib-test/)
+
 [Node.js 操作二进制数据： Buffer、Blob](./buffer-test/)
 
 [手写 DNS 服务器](./my-dns-server/)
