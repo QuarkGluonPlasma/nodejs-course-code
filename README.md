@@ -67,3 +67,5 @@
 [puppeteer 爬虫爬取 boss 直聘](./jd-spider/)
 
 [手写 puppeteer](./mini-puppeteer/)
+
+[Node.js 核心 API 速通](./node-api-test/)
