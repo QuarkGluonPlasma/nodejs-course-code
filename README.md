@@ -34,6 +34,10 @@
 
 [pnpm workspace + changeset 实战](./pnpm-monorepo-test/)
 
+[exceljs 导入导出 excel](./exceljs-test/)
+
+[exceljs 实现国际化资源的分享](./excel-export/)
+
 [快速掌握 rollup](./rollup-test/)
 
 [rollup 打包 react 组件库（react 组件）](./react-comp/)

@@ -1,0 +1,7 @@
+Message ID,zh-CN,en-US
+username,用户名 <bbb>{name}</bbb>,Username <bbb>{name}</bbb>
+password,密码222,Password
+rememberMe,记住我,Remember Me
+submit,提交,Submit
+inputYourUsername,请输入你的用户名！,Please input your username!
+inputYourPassword,请输入你的密码！,Please input your password!
