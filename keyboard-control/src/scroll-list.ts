@@ -2,7 +2,7 @@ import { BaseUi } from './base-ui.js';
 import chalk from 'chalk';
 
 export class ScrollList extends BaseUi{
-    curSeletecIndex = 0;
+    curSelectIndex = 0;
     scrollTop = 0;
 
     constructor(private list: Array<string>= []) {
@@ -35,23 +35,23 @@ export class ScrollList extends BaseUi{
     }
 
     private moveCursor(index: number): void {
-        this.curSeletecIndex += index;
+        this.curSelectIndex += index;
 
-        if (this.curSeletecIndex < 0 ) {
-            this.curSeletecIndex = 0;
+        if (this.curSelectIndex < 0 ) {
+            this.curSelectIndex = 0;
         }
 
-        if (this.curSeletecIndex >= this.list.length) {
-            this.curSeletecIndex = this.list.length - 1
+        if (this.curSelectIndex >= this.list.length) {
+            this.curSelectIndex = this.list.length - 1
         }
 
         this.fitScroll();
     }
 
     fitScroll() {
-        const shouldScrollUp = this.curSeletecIndex < this.scrollTop;
+        const shouldScrollUp = this.curSelectIndex < this.scrollTop;
     
-        const shouldScrollDown = this.curSeletecIndex > this.scrollTop + this.terminalSize.rows - 2;
+        const shouldScrollDown = this.curSelectIndex > this.scrollTop + this.terminalSize.rows - 2;
     
         if(shouldScrollUp) {
             this.scrollTop -= 1;
@@ -84,7 +84,7 @@ export class ScrollList extends BaseUi{
 
             let content = item;
 
-            if (this.curSeletecIndex === this.scrollTop + index) {
+            if (this.curSelectIndex === this.scrollTop + index) {
                 content = this.bgRow(content);
             }
             
